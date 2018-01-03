@@ -21,7 +21,6 @@ public class HomePageTest {
     HomePage objHomePage;
 
   
-
     @BeforeTest
     public void setup()
     {
@@ -29,7 +28,8 @@ public class HomePageTest {
         driver = _driver.getDriver("firefox");                
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
-        driver.get("http://demo.guru99.com/V4/");        
+        String url = "http://demo.guru99.com/V4/";
+        driver.get(url);        
     }
 
     /**
